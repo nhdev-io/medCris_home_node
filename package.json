@@ -4,7 +4,9 @@
   "description": "Medcris homepage",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass styles/sass/main.scss public/css/main.css -w",
+    "start": "node index"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,9 @@
   },
   "homepage": "https://github.com/nhdev-io/medCris_home_node#readme",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.16.4",
+    "node-sass-middleware": "^0.11.0",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {}
 }
