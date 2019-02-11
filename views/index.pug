@@ -1,6 +1,41 @@
 html
   head
-    title= title
+    title MedCris | Home
     link(rel="stylesheet", href="main.css")
   body
-    h1= message
+    nav
+      .navContainer
+        span(style="font-size:28; font-weight: 300;") Med
+          span(style="font-weight: 800;") Cris
+          span +
+        .inlineBetween(style="width: 330px")
+          a(href="http://") About
+          a(href="http://") Pricing
+          a(href="http://") Support
+          a(href="http://") 
+            button Sign In
+    .mainImage
+      .container.col(style="height:90%")
+        h1(style="max-width: 600px; margin-bottom: 60px;") We make healthcare system and hospital financial data accessible.
+        button Subscribe
+    .container.whiteContainer(style="transform: translateY(-150px);")
+      .whiteContainerTop
+        .whiteTopItem
+          div 
+            h2 Extensive
+              br
+              span(style="font-weight: 400") Records
+            p All 2014 - 2018 Medicare data is queryable
+        .whiteTopItem
+          div 
+            h2 Unlimited
+              br
+              span(style="font-weight: 400") Access
+            p No cap on number of queries for subscribers
+        .whiteTopItem
+          div 
+            h2 Extensive
+              br
+              span(style="font-weight: 400") Records
+            p All 2014 - 2018 Medicare data is queryable
+      .whiteContainer2
